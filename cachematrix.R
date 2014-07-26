@@ -1,7 +1,7 @@
 ## A pair of functions that cache the inverse of a matrix. 
 ## For example:
 ## m<-makeCacheMatrix()   - will first set up a matrix
-## m$set(matrix(1:9,3,3)) - will set the matrix with data 
+## m$set(matrix(1:4,2,2)) - will set the matrix with data 
 ## cacheSolve(m)          - will return the inverse of the matrix
 ## Calling cacheSolve(m) again will return the cached inverse of the matrix
 
