@@ -1,3 +1,11 @@
+## A pair of functions that cache the inverse of a matrix. 
+## For example:
+## m<-makeCacheMatrix()   - will first set up a matrix
+## m$set(matrix(1:9,3,3)) - will set the matrix with data 
+## cacheSolve(m)          - will return the inverse of the matrix
+## Calling cacheSolve(m) again will return the cached inverse of the matrix
+
+
 ## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -24,7 +32,6 @@ makeCacheMatrix <- function(x = matrix()) {
          setinv = setinv, 
          getinv = getinv)
 }
-
 
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix 
 ## If the inverse has already been calculated (and the matrix has not changed), then 
